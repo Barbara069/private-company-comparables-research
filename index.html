@@ -142,7 +142,7 @@ if(current)render();
 const economicAliasRics={"RIO.AX": "RIO.L", "INLJ.J": "INVP.L", "NY1J.J": "N91.L"};
 companies=companies.filter(c=>c.role!=='PUBLIC'||!economicAliasRics[c.id]);
 companyList();
-const universeNote=document.createElement('p');universeNote.className='small';universeNote.id='universeIdentityNote';
+const universeNote=document.createElement('p');universeNote.className='small';universeNote.id='universeIdentityNote';universeNote.style.color='#e2f0ef';universeNote.style.fontSize='14px';universeNote.style.lineHeight='1.5';
 universeNote.textContent='Universe snapshot (28 Oct 2026): 40,062 securities → 38,788 economic company groups (including 3 unresolved issuer IDs). Description reference: 30,413 groups; 61 identity-held descriptions are excluded from matching. Dual-listed economic groups count once; separately listed parents and subsidiaries remain separate.';
 document.querySelector('header').appendChild(universeNote);
 </script>
